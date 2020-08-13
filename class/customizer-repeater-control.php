@@ -177,7 +177,7 @@ class Customizer_Repeater extends WP_Customize_Control {
 			foreach($array as $icon){ ?>
                 <div class="customizer-repeater-general-control-repeater-container customizer-repeater-draggable">
                     <div class="customizer-repeater-customize-control-title">
-						<?php echo esc_html( $this->boxtitle ) ?>
+						<?php if($title != ''){echo esc_html($title);} else {echo esc_html( $this->boxtitle );} ?>
                     </div>
                     <div class="customizer-repeater-box-content-hidden">
 						<?php
